@@ -7,5 +7,5 @@ FEMALE = "FEMALE",
 ETC = "ETC",
 }
 
-const sex: "MALE" | "FEMALE " | "ETC" = "MALE";
+const sex: "MALE" | "FEMALE " | "ETC" = "MALE"; // literal
 const sex2 : sexEnum = sexEnum.MALE;
