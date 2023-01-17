@@ -11,7 +11,7 @@ class UserInfo {
         this._city = city;
     }
     get city() :string{ // private에는 주로 밑줄 변수명으로 붙이는 관례
-        retrun this._city
+        return this._city
     } 
 
 }
