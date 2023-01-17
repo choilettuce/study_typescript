@@ -32,6 +32,8 @@ type MyString = string;
 type YongsooNumber = number;
 type SuperVoid = void;
 
+// never
+
 function sendError(): never {
     throw {errorCode : 500, message : "internal server error"}
 }
