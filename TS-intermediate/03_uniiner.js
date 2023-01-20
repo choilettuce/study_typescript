@@ -1,3 +1,4 @@
+"use strict";
 //1. union - 합집합 |(or)
 var nameOrAge;
 nameOrAge = "lettuce";
