@@ -13,6 +13,8 @@ class UserInfo {
     get city() :string{ // private에는 주로 밑줄 변수명으로 붙이는 관례
         return this._city;
     } 
+    // 세터는 속력, 넓이, 나이 등은 음수를 쓸 수 없는데
+    // 
     set city(newcity: string) {
         this._city = newcity;
     }
@@ -24,3 +26,4 @@ const user = new UserInfo("용수", 25, "seoul");
 // console.log(user.name, user.age, user.city)
 user.city = "incheon" 
 console.log(user.name, user.age, user.city);
+
