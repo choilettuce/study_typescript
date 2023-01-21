@@ -1,8 +1,14 @@
-function printType(params:any) {
-    console.log(typeof params)
+// function printType(params:any) {
+//     console.log(typeof params)
+// }
+
+// printType("random");
+// printType(23);
+// printType({})
+interface IGene<T> {
+    data :T;
 }
 
-interface IGene {
-    data :any;
-    
+function prt(params: IGene<string>) {
+    console.log(typeof params.data);
 }
