@@ -12,3 +12,5 @@ interface IGene<T> {
 function prt(params: IGene<string>) {
     console.log(typeof params.data);
 }
+
+prt({data : "123"})
