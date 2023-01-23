@@ -9,8 +9,8 @@ interface IGene<T> {
     data :T;
 }
 
-function prt(params: IGene<string>) {
+function prt1(params: IGene<string>) {
     console.log(typeof params.data);
 }
 
-prt({data : "123"})
+prt1({data : "123"})

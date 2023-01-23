@@ -17,7 +17,7 @@ interface IHi {
     hi : (name : string) => void;
 }
 function execute<T extends IHi>(params:T) {
-    params.hi("lettucce");
+    params.hi("lettuce");
 }
 execute({
     hi() {

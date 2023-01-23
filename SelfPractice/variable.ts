@@ -28,7 +28,7 @@ function void2(): void {
 }
 
 //object
-let obj : { name : string, age: number } = { name: "lettuce", age : 30};
+let obj3 : { name : string, age: number } = { name: "lettuce", age : 30};
 
 // never
 // 함수에 사용. 함수의 끝에 절대 도달하지 않는다
