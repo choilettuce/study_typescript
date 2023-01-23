@@ -11,8 +11,10 @@ let any: any;
 let arr1: number[] = [1,2,3,4,5];
 let arr2: string[] = ['a','b','c','d'];
 let arr3: Array<number> = [1,2,3,4,5];
+
 // Tuple
 let arr4: [string, number] = ['str',1];
+
 // Enum
 enum Names { 홍길동, 코딩온, 새싹 };
 let name1: Names = Names.홍길동;
@@ -24,6 +26,9 @@ let void1: void = undefined;
 function void2(): void {
     console.log('11');
 }
+
+//object
+let obj : { name : string, age: number } = { name: "lettuce", age : 30};
 
 // never
 // 함수에 사용. 함수의 끝에 절대 도달하지 않는다
@@ -40,3 +45,12 @@ test = [1,2,3];
 let test2: object; // 기본타입을 제외한 나머지 모두 ( array, tuple 등등 )
 // test2 = 1;
 test2 = [1,2,3];
+
+//err
+const a : string = "lettuce"
+// a = 1 - 오류가 난다.
+
+// function
+function add( a: number, b : number) : number {
+    return a + b;
+}
