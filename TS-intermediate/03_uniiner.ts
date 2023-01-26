@@ -23,12 +23,12 @@ function prtUnion(params : any) {
 
 prtUnion({name : "lettuce"})
 //2. intersection - 교집합 &(And)
-// interface IName {
-//     name : string;
-// }
-// interface IAge {
-//     age : number;
-// }
+interface IIName {
+    name : string;
+}
+interface IIAge {
+    age : number;
+}
 // const nameAndAge : IName & IAge = {
 //     name : "lettuce"
 

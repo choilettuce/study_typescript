@@ -9,7 +9,7 @@ class ExampleClass {
     constructor() {  
     }
     getReq() {}
-    postReq() {}
+    postReq() {} 
 }
 
 // 3. 런타임에 클래스에 붙어서 실행되는 함수 

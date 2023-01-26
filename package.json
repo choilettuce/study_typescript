@@ -18,5 +18,8 @@
   "homepage": "https://github.com/choilettuce/study_typescript#readme",
   "dependencies": {
     "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
   }
 }
