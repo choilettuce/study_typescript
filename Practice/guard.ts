@@ -20,19 +20,19 @@ function setUser(
         target[param] = newValue;
     } else if (param === "detail" && newValue instanceof IDetail) {
         target[param] = newValue;
-    } else if (param === "sns" && typeof newValue === "string") {
-        const v : typeSNS = newValue;
-        target[param] = v;
-    } 
+    }  else if (param === "sns" && typeof newValue === "string") {
+    // const v: typeSNS = newValue;
+    // target[param] = v;
+  }
 }
 
 
 const detail:IDetail = new IDetail("lettuce", 30, "seoul");
-const user: IUser = {
-    detail,
-    marketing : true,
-    sns : "kakao",
+// const user: IUser = {
+//     detail,
+//     marketing : true,
+//     sns : "kakao",
 
-};
-console.log(user)
-setUser(user, "sns", "naver")
+// };
+// console.log(user)
+// setUser(user, "sns", "naver")

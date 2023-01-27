@@ -20,11 +20,16 @@ interface IUser {
 
 function getLogic(p: IAdmin | IManager | IUser) {
     switch(p.type) {
-        case "admin": console.log("모두 불러오기" ,(p as IAdmin).post);
+        case "admin": 
+            console.log("post 불러오기" ,(p as IAdmin).post);
+            console.log("info 불러오기" ,(p as IAdmin).info);
+            console.log("detail 불러오기" ,(p as IAdmin).detail);
             break;
-        case "manager" : console.log("info만 추가해서 불러오기")
+        case "manager" : 
+        console.log("post 불러오기" ,(p as IAdmin).post);
+        console.log("info 불러오기" ,(p as IAdmin).info);
             break;
-        case "user": console.log("post만");
+        case "user": console.log("post만",p.post);
             break;
     }
     
@@ -32,3 +37,7 @@ function getLogic(p: IAdmin | IManager | IUser) {
     // admin manageer user
     // 누가 가져오느냐에 따라 보여주는 것을 다르게 구현
 }
+
+getLogic({type: "manager",
+ post: "post 불러오는 로직 발동!", 
+ info: "info 불러오는 로직 발동!"})
